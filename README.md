@@ -440,5 +440,3 @@ Building in public. Every project documented on LinkedIn with the architecture d
 [![Email](https://img.shields.io/badge/Email-vedapraneeth9@gmail.com-red?style=flat-square)](mailto:vedapraneeth9@gmail.com)
 
 ---
-
-*14 projects. 14 days. One portfolio that didn't exist two weeks ago.*
