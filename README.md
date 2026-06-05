@@ -440,3 +440,9 @@ Building in public. Every project documented on LinkedIn with the architecture d
 [![Email](https://img.shields.io/badge/Email-vedapraneeth9@gmail.com-red?style=flat-square)](mailto:vedapraneeth9@gmail.com)
 
 ---
+
+## 🙏 Acknowledgments
+
+> Built with assistance from [Claude](https://claude.ai) (Anthropic) for code review, architecture feedback, and documentation.
+
+---
