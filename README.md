@@ -1,22 +1,12 @@
-# 🤖 AI Portfolio — 14 Projects in 14 Days
-
-> Built by **Veda Praneeth** · MS CS (USA) · AI Engineer  
-> **14 production-ready AI systems** shipped in 14 consecutive days.  
+# 🤖 AI Portfolio — 14 Projects
+ 
+> **14 production-ready AI systems**  
 > Every project is deployed, documented, and explained from first principles.
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue?style=flat-square)](https://python.org)
 [![Gemini](https://img.shields.io/badge/LLM-Gemini%202.0%20Flash-orange?style=flat-square)](https://ai.google.dev)
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-red?style=flat-square)](https://streamlit.io)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-
----
-
-## 👤 About
-
-I am an AI engineer who spent 14 days building and shipping one production-quality AI system per day — documented publicly on LinkedIn. Every project covers a different technique: RAG, multi-agent orchestration, voice pipelines, NL-to-SQL, responsible AI safety design, and more.
-
-- 📧 vedapraneeth9@gmail.com
-- 💼 [LinkedIn](https://linkedin.com/in/vedapraneeth)
 
 ---
 
@@ -50,17 +40,17 @@ google-genai          # Gemini 2.0 Flash API
 streamlit             # UI for all projects
 pydantic              # Output validation (used in every project)
 python-dotenv         # Environment variable management
-faster-whisper        # Local speech-to-text (Days 2, 12)
-pymupdf               # PDF parsing (Days 3, 5)
-sentence-transformers # Text embeddings (Days 3, 5, 10, 14)
-chromadb              # Vector database (Days 3, 5, 10, 14)
-python-docx           # Word document parsing (Day 5)
-requests              # HTTP requests (Day 4)
-beautifulsoup4        # Web scraping (Day 4)
-tavily-python         # Web search API (Days 6, 9)
-PyGithub              # GitHub API (Day 8)
-pandas                # Data analysis (Day 11)
-plotly                # Charts (Day 11)
+faster-whisper        # Local speech-to-text (Projects 2, 12)
+pymupdf               # PDF parsing (Projects 3, 5)
+sentence-transformers # Text embeddings (Projects 3, 5, 10, 14)
+chromadb              # Vector database (Projects 3, 5, 10, 14)
+python-docx           # Word document parsing (Project 5)
+requests              # HTTP requests (Project 4)
+beautifulsoup4        # Web scraping (Project 4)
+tavily-python         # Web search API (Projects 6, 9)
+PyGithub              # GitHub API (Project 8)
+pandas                # Data analysis (Project 11)
+plotly                # Charts (Project 11)
 ```
 
 ---
@@ -116,8 +106,8 @@ streamlit run ui.py
 
 **Free API keys needed:**
 - [Gemini API](https://ai.google.dev) — 1500 requests/day free
-- [Tavily API](https://tavily.com) — 1000 searches/month free (Days 6, 9)
-- [GitHub Token](https://github.com/settings/tokens) — free (Day 8)
+- [Tavily API](https://tavily.com) — 1000 searches/month free (Projects 6, 9)
+- [GitHub Token](https://github.com/settings/tokens) — free (Project 8)
 
 ---
 
@@ -394,29 +384,29 @@ cd 14-mentorai && streamlit run ui.py
 
 ## 🧠 Key Patterns Across All 14 Projects
 
-**RAG (used in Days 3, 5, 10, 14)**
+**RAG (used in Projects 3, 5, 10, 14)**
 Embed documents → store in ChromaDB → embed query → retrieve top-k → send to LLM as context. The LLM answers only from retrieved content.
 
 **Pydantic validation (used in every project)**
 LLM output is unreliable. Pydantic validates every field, provides safe defaults, and prevents runtime crashes. Never trust raw LLM JSON without validation.
 
-**Defense in depth (Days 7, 13)**
+**Defense in depth (Projects 7, 13)**
 Never rely on a single safety layer. Prompt constraints + output validation + post-processing. Each layer catches what the previous missed.
 
-**Self-correction (Day 13)**
+**Self-correction (Project 13)**
 When a query fails, send the error back to the LLM as context. LLMs are surprisingly good at reading error messages and fixing their own output.
 
-**Map-reduce for AI (Day 8)**
+**Map-reduce for AI (Project 8)**
 Process N items independently (map), then synthesize results (reduce). Scales better than trying to process everything in one prompt.
 
-**Two-step classification (Day 10)**
+**Two-step classification (Project 10)**
 Keyword scan first (no API cost, catches obvious cases), LLM second (handles nuanced cases). Cuts API calls by 60%.
 
 ---
 
 ## 📊 Build-in-Public Stats
 
-- **14 projects** shipped in **14 consecutive days**
+- **14 projects**
 - **6 projects** deployed on Streamlit Cloud
 - **8 projects** run locally (use local models — faster-whisper, sentence-transformers)
 - **4 external APIs** used: Gemini, Tavily, GitHub, HuggingFace
