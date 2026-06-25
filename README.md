@@ -1,4 +1,4 @@
-# 🤖 AI Portfolio — 14 Projects
+# 🤖 AI Product Studio — 14 Projects
  
 > **14 production-ready AI systems**  
 > Every project is deployed, documented, and explained from first principles.
